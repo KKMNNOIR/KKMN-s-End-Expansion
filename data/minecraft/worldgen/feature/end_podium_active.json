@@ -1,0 +1,41 @@
+{
+	"type": "minecraft:overlay",
+	"features": [
+		{
+			"feature": {
+				"type": "minecraft:end_podium",
+				"active": true
+			},
+			"placement": []
+		},
+		{
+			"feature": {
+				"type": "minecraft:single_block_pillar",
+				"direction": "up",
+				"can_replace": {
+					"type": "minecraft:matching_blocks",
+					"blocks": ["minecraft:bedrock"],
+					"offset": [0, 0, 0]
+				},
+				"chance_to_continue": 1.0,
+				"block": {
+					"type": "minecraft:rule_based",
+					"rules": []
+				},
+				"cap_feature": {
+					"feature": {
+						"type": "minecraft:simple_block",
+						"to_place": {
+							"type": "minecraft:simple",
+							"state": {
+								"id": "minecraft:dragon_egg"
+							}
+						}
+					},
+					"placement": []
+				}
+			},
+			"placement": []
+		}
+	]
+}

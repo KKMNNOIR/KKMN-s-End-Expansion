@@ -1,0 +1,48 @@
+{
+	"type": "minecraft:upscale",
+	"input": {
+		"type": "minecraft:clamp",
+		"input": {
+			"type": "minecraft:mul",
+			"left": {
+				"type": "minecraft:pow",
+				"base": -1.0,
+				"exponent": {
+					"type": "minecraft:floor",
+					"input": {
+						"type": "minecraft:div",
+						"left": "kkmnnoir:end/ring/distance_from_center",
+						"right": 500
+					}
+				}
+			},
+			"right": {
+				"type": "minecraft:mul",
+				"left": 4.0,
+				"right": {
+					"type": "minecraft:mul",
+					"left": "kkmnnoir:end/ring/base_function",
+					"right": {
+						"type": "minecraft:sub",
+						"left": 1,
+						"right": "kkmnnoir:end/ring/base_function"
+					}
+				}
+			}
+		},
+		"max": 1,
+		"min": 0
+	},
+	"x": {
+		"cell_size": 4,
+		"mode": "interpolate_linear"
+	},
+	"y": {
+		"cell_size": 8,
+		"mode": "interpolate_linear"
+	},
+	"z": {
+		"cell_size": 4,
+		"mode": "interpolate_linear"
+	}
+}

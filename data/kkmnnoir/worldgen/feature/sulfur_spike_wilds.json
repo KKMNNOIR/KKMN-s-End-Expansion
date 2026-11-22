@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:speleothem",
+    "base_block": "minecraft:sulfur",
+    "pointed_block": "minecraft:sulfur_spike",
+    "replaceable_blocks": "minecraft:end_stone",
+    "chance_of_taller_generation": 0.6,
+    "chance_of_directional_spread": 0.7,
+    "chance_of_spread_radius2": 0.7,
+    "chance_of_spread_radius3": 0.7
+}

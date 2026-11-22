@@ -1,0 +1,28 @@
+{
+    "feature": "kkmnnoir:patch_twisting_vine",
+    "placement": [
+        {
+            "type": "minecraft:rarity_filter",
+            "chance": 4
+        },
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": {
+                "type": "minecraft:weighted_list",
+                "distribution": [
+                    {
+                        "weight": 3,
+                        "data": 1
+                    },
+                    {
+                        "weight": 1,
+                        "data": 2
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:range_choice",
+	"input": {
+		"type": "minecraft:distance_to_point",
+		"point": [0, 0, 0],
+		"metric": "euclidean"
+	},
+	"min_inclusive": 100,
+	"max_exclusive": 255,
+	"when_in_range": {
+		"type": "minecraft:mul",
+		"left": {
+			"type": "minecraft:distance_to_point",
+			"point": [0, 0, 0],
+			"metric": "euclidean"
+		},
+		"right": -1
+	},
+	"when_out_of_range": 1
+}

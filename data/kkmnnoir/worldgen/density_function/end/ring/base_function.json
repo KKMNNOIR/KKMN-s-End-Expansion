@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:sub",
+	"left": "kkmnnoir:end/ring/distance_from_center",
+	"right": {
+		"type": "minecraft:floor",
+		"input": "kkmnnoir:end/ring/distance_from_center",
+		"multiple": 1
+	}
+}

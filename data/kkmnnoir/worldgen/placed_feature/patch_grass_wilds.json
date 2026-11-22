@@ -1,0 +1,16 @@
+{
+    "feature": "kkmnnoir:patch_grass_wilds",
+    "placement": [
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 6,
+                "max_inclusive": 12
+            }
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

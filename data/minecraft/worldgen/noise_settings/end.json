@@ -1,0 +1,232 @@
+{
+	"debug_functions": [
+		{
+			"function": "kkmnnoir:end/continentalness",
+			"label": "本島/外縁諸島"
+		},
+		{
+			"function": "minecraft:overworld/vegetation",
+			"label": "Humidity"
+		},
+		{
+			"function": "kkmnnoir:end/temperature",
+			"label": "Temperature"
+		},
+		{
+			"function": {
+				"type": "minecraft:distance_to_point",
+				"point": [0, 0, 0],
+				"metric": "euclidean"
+			},
+			"label": "中心からの距離"
+		},
+		{
+			"function": "kkmnnoir:end/chunk_xz",
+			"label": "CHUNK_XZ"
+		},
+		{
+			"function": "kkmnnoir:end/x",
+			"label": "X座標"
+		},
+		{
+			"function": "kkmnnoir:end/z",
+			"label": "Z座標"
+		},
+		{
+			"function": "kkmnnoir:end/aquifer_exclusion",
+			"label": "AQUIFER_EXCLUSION"
+		},
+		{
+			"function": "minecraft:end/final_density",
+			"label": "地形"
+		},
+		{
+			"function": "minecraft:end/islands",
+			"label": "Islands"
+		},
+		{
+			"function": "kkmnnoir:end/ring/void",
+			"label": "VF"
+		},
+		{
+			"function": {
+				"type": "minecraft:pow",
+				"base": -1.0,
+				"exponent": {
+					"type": "minecraft:floor",
+					"input": {
+						"type": "minecraft:div",
+						"left": {
+							"type": "minecraft:floor",
+							"input": "kkmnnoir:end/ring/distance_from_center",
+							"multiple": 1
+						},
+						"right": 1000
+					}
+				}
+			},
+			"label": "EXP"
+		},
+		{
+			"function": {
+				"type": "minecraft:mul",
+				"left": 4.0,
+				"right": {
+					"type": "minecraft:mul",
+					"left": "kkmnnoir:end/ring/base_function",
+					"right": {
+						"type": "minecraft:sub",
+						"left": 1,
+						"right": "kkmnnoir:end/ring/base_function"
+					}
+				}
+			},
+			"label": "R"
+		},
+		{
+			"function": {
+				"type": "minecraft:mul",
+				"left": {
+					"type": "minecraft:pow",
+					"base": -1.0,
+					"exponent": {
+						"type": "minecraft:div",
+						"left": {
+							"type": "minecraft:floor",
+							"input": "kkmnnoir:end/ring/distance_from_center",
+							"multiple": 1
+						},
+						"right": 10000
+					}
+				},
+				"right": {
+					"type": "minecraft:mul",
+					"left": 4.0,
+					"right": {
+						"type": "minecraft:mul",
+						"left": "kkmnnoir:end/ring/base_function",
+						"right": {
+							"type": "minecraft:sub",
+							"left": 1,
+							"right": "kkmnnoir:end/ring/base_function"
+						}
+					}
+				}
+			},
+			"label": "VF_NOCLAMP"
+		},
+		{
+			"function": {
+				"type": "minecraft:mul",
+				"left": "kkmnnoir:end/ring/base_function",
+				"right": {
+					"type": "minecraft:sub",
+					"left": 1,
+					"right": "kkmnnoir:end/ring/base_function"
+				}
+			},
+			"label": "t(1-t)"
+		},
+		{
+			"function": {
+				"type": "minecraft:mul",
+				"left": 4.0,
+				"right": {
+					"type": "minecraft:mul",
+					"left": "kkmnnoir:end/ring/base_function",
+					"right": {
+						"type": "minecraft:sub",
+						"left": 1,
+						"right": "kkmnnoir:end/ring/base_function"
+					}
+				}
+			},
+			"label": "4t(1-t)"
+		},
+		{
+			"function": "kkmnnoir:end/ring/distance_from_center",
+			"label": "DIST^1.5"
+		},
+		{
+			"function": {
+				"type": "minecraft:pow",
+				"base": {
+					"type": "minecraft:distance_to_point",
+					"point": [0, 0, 0],
+					"metric": "euclidean"
+				},
+				"exponent": 2
+			},
+			"label": "DIST^2"
+		},
+		{
+			"function": {
+				"type": "minecraft:range_choice",
+				"input": {
+					"type": "minecraft:distance_to_point",
+					"point": [0, 0, 0],
+					"metric": "euclidean"
+				},
+				"min_inclusive": 0,
+				"max_exclusive": 370700,
+				"when_in_range": 1.0,
+				"when_out_of_range": "kkmnnoir:end/ring/void"
+			},
+			"label": "RF"
+		},
+		{
+			"function": "kkmnnoir:end/ring/base_function",
+			"label": "RB"
+		},
+		{
+			"function": {
+				"type": "minecraft:floor",
+				"input": "kkmnnoir:end/ring/distance_from_center"
+			},
+			"label": "RB_FLOOR"
+		}
+	],
+	"default_fluid": "minecraft:air",
+	"disable_mob_generation": true,
+	"legacy_random_source": true,
+	"material_rule": "minecraft:end",
+	"noise": {
+		"height": 160,
+		"min_y": -32
+	},
+	"noise_router": {
+		"chunk_surface_level": 0.0,
+		"continents": "kkmnnoir:end/continentalness",
+		"depth": 0.0,
+		"erosion": "minecraft:end/islands",
+		"final_density": "minecraft:end/final_density",
+		"ridges": 0.0,
+		"temperature": "kkmnnoir:end/temperature",
+		"vegetation": "minecraft:overworld/vegetation"
+	},
+	"aquifers": {
+		"surface_level": 112,
+		"barrier": {
+			"type": "minecraft:noise",
+			"noise": "minecraft:aquifer_barrier",
+			"xz_scale": 1.0,
+			"y_scale": 0.5
+		},
+		"fluid_level_floodedness": {
+			"type": "minecraft:noise",
+			"noise": "minecraft:aquifer_fluid_level_floodedness",
+			"xz_scale": 2.0,
+			"y_scale": 4
+		},
+		"fluid_level_spread": {
+			"type": "minecraft:noise",
+			"noise": "minecraft:aquifer_fluid_level_spread",
+			"xz_scale": 1.0,
+			"y_scale": 0.7142857142857143
+		},
+		"lava": 0,
+		"exclusion": "kkmnnoir:end/aquifer_exclusion"
+	},
+	"sea_level": 0,
+	"spawn_target": []
+}

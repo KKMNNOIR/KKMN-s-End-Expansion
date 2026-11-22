@@ -1,0 +1,569 @@
+{
+    "type": "minecraft:overlay",
+    "features": [
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 6,
+                            "max_inclusive": 9
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": []
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 3,
+                            "max_inclusive": 4
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": -1,
+                    "z": 0,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 3,
+                            "max_inclusive": 4
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 1,
+                    "z": 0,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 3,
+                            "max_inclusive": 4
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "z": -1,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 3,
+                            "max_inclusive": 4
+                        },
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "z": 1,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": 2,
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": -1,
+                    "z": -1,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": 2,
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": -1,
+                    "z": 1,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": 2,
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 1,
+                    "z": -1,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": 2,
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 1,
+                    "z": 1,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": 1,
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": -2,
+                    "z": 0,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": 1,
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 2,
+                    "z": 0,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": 1,
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "z": -2,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:block_column",
+                "direction": "up",
+                "allowed_placement": {
+                    "type": "minecraft:true"
+                },
+                "prioritize_tip": false,
+                "layers": [
+                    {
+                        "height": 1,
+                        "provider": {
+                            "type": "minecraft:simple",
+                            "state": "minecraft:cobbled_deepslate"
+                        }
+                    }
+                ]
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 32
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "z": 2,
+                    "y": 0
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:projected_random_patchy_square",
+                "size": 5,
+                "block": {
+                    "type": "minecraft:simple",
+                    "state": "minecraft:cobbled_deepslate"
+                },
+                "max_projection_height": 1,
+                "project_through": {
+                    "type": "minecraft:matching_block_tag",
+                    "tag": "minecraft:air"
+                }
+            },
+            "placement": [
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "y": -1,
+                    "z": 0
+                }
+            ]
+        },
+        {
+            "feature": {
+                "type": "minecraft:single_block_pillar",
+                "direction": "down",
+                "block": {
+                    "type": "minecraft:simple",
+                    "state": "minecraft:cobbled_deepslate"
+                },
+                "can_replace": {
+                    "type": "minecraft:matching_block_tag",
+                    "tag": "minecraft:air"
+                },
+                "chance_to_continue": 0.9
+            },
+            "placement": [
+                {
+                    "type": "minecraft:count",
+                    "count": 96
+                },
+                {
+                    "type": "minecraft:offset",
+                    "x": {
+                        "type": "minecraft:trapezoid",
+                        "min": -5,
+                        "max": 5,
+                        "plateau": 0
+                    },
+                    "z": {
+                        "type": "minecraft:trapezoid",
+                        "min": -5,
+                        "max": 5,
+                        "plateau": 0
+                    },
+                    "y": -3
+                },
+                {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": ["minecraft:cobbled_deepslate"],
+                        "offset": [0,1,0]
+                    }
+                }
+            ]
+        }
+    ]
+}

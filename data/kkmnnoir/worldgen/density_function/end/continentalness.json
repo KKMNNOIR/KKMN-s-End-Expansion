@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:cache",
+	"input": {
+		"type": "minecraft:slice",
+		"axis": "y",
+		"coordinate": 0,
+		"input": {
+			"type": "minecraft:sub",
+			"left": 1.0,
+			"right": {
+				"type": "minecraft:div",
+				"left": "kkmnnoir:end/chunk_xz",
+				"right": 4096
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+{
+    "type": "minecraft:spline",
+    "spline": {
+        "coordinate": "kkmnnoir:end/continentalness",
+        "points": [
+            {
+                "location": -1,
+                "derivative": 0,
+                "value": {
+                    "coordinate": "minecraft:end/islands",
+                    "points": [
+                        {
+                            "location": -1,
+                            "derivative": 0,
+                            "value": 0
+                        },
+                        {
+                            "location": 0.25,
+                            "derivative": 0,
+                            "value": 0
+                        },
+                        {
+                            "location": 0.3,
+                            "derivative": 0,
+                            "value": {
+                                "coordinate": "minecraft:overworld/vegetation",
+                                "points": [
+                                    {
+                                        "location": -1,
+                                        "derivative": 0,
+                                        "value": 0.457
+                                    },
+                                    {
+                                        "location": 0,
+                                        "derivative": 0,
+                                        "value": 0.457
+                                    },
+                                    {
+                                        "location": 0.4,
+                                        "derivative": 0,
+                                        "value": 0
+                                    },
+                                    {
+                                        "location": 1,
+                                        "derivative": 0,
+                                        "value": 0.457
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "location": 0.5,
+                            "derivative": 0,
+                            "value": {
+                                "coordinate": "minecraft:overworld/vegetation",
+                                "points": [
+                                    {
+                                        "location": -1,
+                                        "derivative": 0,
+                                        "value": 0.7
+                                    },
+                                    {
+                                        "location": 0,
+                                        "derivative": 0,
+                                        "value": 0.7
+                                    },
+                                    {
+                                        "location": 0.4,
+                                        "derivative": 0,
+                                        "value": 0
+                                    },
+                                    {
+                                        "location": 1,
+                                        "derivative": 0,
+                                        "value": 0.7
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "location": 0,
+                "derivative": 0,
+                "value": 0
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:overlay",
+    "features": [
+        {
+            "feature": "kkmnnoir:end_platform",
+            "placement": [
+                {
+                    "type": "minecraft:offset",
+                    "x": 0,
+                    "y": -2,
+                    "z": 0
+                }
+            ]
+        },
+        {
+            "feature": "kkmnnoir:end_platform_bottom",
+            "placement": [
+                {
+                    "type": "minecraft:offset",
+                    "x": -1,
+                    "y": -10,
+                    "z": 0
+                }
+            ]
+        }
+    ]
+}

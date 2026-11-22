@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:simple",
+    "state": {
+        "id": "minecraft:calcite_wall",
+        "properties": {
+            "north": "low",
+            "east": "low",
+            "west": "low"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:range_choice",
+	"input": {
+		"type": "minecraft:distance_to_point",
+		"point": [0, 0, 0],
+		"metric": "euclidean_squared"
+	},
+	"min_inclusive": 524289,
+	"max_exclusive": 642112,
+	"when_in_range": 1,
+	"when_out_of_range": 0
+}

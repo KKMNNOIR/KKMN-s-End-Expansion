@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:sequence",
+  "sequence": [
+    {
+      "type": "minecraft:condition",
+      "if_true": {
+        "type": "minecraft:biome",
+        "biome_is": ["minecraft:nether_wastes"]
+      },
+      "then_run": {
+        "type": "minecraft:block",
+        "result_state": "minecraft:netherrack"
+      }
+    },
+    {
+      "type": "minecraft:block",
+      "result_state": "minecraft:end_stone"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:add",
+	"left": {
+		"type": "minecraft:pow",
+		"base": {
+			"type": "minecraft:div",
+			"left": "kkmnnoir:end/x",
+			"right": 16
+		},
+		"exponent": 2
+	},
+	"right": {
+		"type": "minecraft:pow",
+		"base": {
+			"type": "minecraft:div",
+			"left": "kkmnnoir:end/z",
+			"right": 16
+		},
+		"exponent": 2
+	}
+}

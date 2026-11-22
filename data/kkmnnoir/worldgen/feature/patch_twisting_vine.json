@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:vegetation_patch",
+    "surface": "floor",
+    "vertical_range": 8,
+    "depth": 1,
+    "extra_bottom_block_chance": 0.25,
+    "xz_radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 4
+    },
+    "extra_edge_column_chance": 0.7,
+    "replaceable": "minecraft:end_stone",
+    "ground_state": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:warped_wart_block"
+        }
+    },
+    "vegetation_feature": {
+        "feature": {
+            "type": "minecraft:single_block_pillar",
+            "direction": "up",
+            "block": {
+                "type": "minecraft:simple",
+                "state": {
+                    "id": "minecraft:twisting_vines_plant"
+                }
+            },
+            "can_replace": {
+                "type": "minecraft:matching_block_tag",
+                "tag": "minecraft:air"
+            },
+            "chance_to_continue": 0.9,
+            "cap_feature": {
+                "feature": {
+                    "type": "minecraft:simple_block",
+                    "to_place": {
+                        "type": "minecraft:randomized_int",
+                        "source": {
+                            "type": "minecraft:simple",
+                            "state": {
+                                "id": "minecraft:twisting_vines",
+                                "properties": {
+                                    "age": "0"
+                                }
+                            }
+                        },
+                        "property": "age",
+                        "values": {
+                            "type": "minecraft:uniform",
+                            "min_inclusive": 1,
+                            "max_inclusive": 16
+                        }
+                    }
+                },
+                "placement": []
+            }
+        },
+        "placement": []
+    },
+    "vegetation_chance": 0.5
+}

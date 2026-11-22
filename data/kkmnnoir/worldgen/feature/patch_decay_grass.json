@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:vegetation_patch",
+    "surface": "floor",
+    "vertical_range": 12,
+    "depth": 1,
+    "extra_bottom_block_chance": 0.2,
+    "xz_radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 3
+    },
+    "extra_edge_column_chance": 0.6667,
+    "replaceable": "minecraft:end_stone",
+    "ground_state": {
+        "type": "minecraft:simple",
+        "state": {
+            "id": "minecraft:dead_brain_coral_block"
+        }
+    },
+    "vegetation_feature": {
+        "feature": "kkmnnoir:grass_decay",
+        "placement": [
+            {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                    "type": "minecraft:matching_block_tag",
+                    "tag": "minecraft:air"
+                }
+            }
+        ]
+    },
+    "vegetation_chance": 0.3125
+}

@@ -1,0 +1,9 @@
+{
+    "feature": "kkmnnoir:patch_grass_wilds",
+    "placement": [
+        {
+            "type": "minecraft:fixed_placement",
+            "positions": [[16,63,-1]]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:div",
+	"left": {
+		"type": "minecraft:pow",
+		"base": {
+			"type": "minecraft:distance_to_point",
+			"point": [0, 0, 0],
+			"metric": "euclidean"
+		},
+		"exponent": 1.5
+	},
+	"right": 10000
+}

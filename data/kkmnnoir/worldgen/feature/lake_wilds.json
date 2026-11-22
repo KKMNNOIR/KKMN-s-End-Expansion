@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:random_boolean_selector",
+    "feature_false": {
+        "feature": "kkmnnoir:lake_void",
+        "placement": []
+    },
+    "feature_true": {
+        "feature": "kkmnnoir:lake_water_end",
+        "placement": [
+            {
+                "type": "minecraft:offset",
+                "x": 0,
+                "z": 0,
+                "y": -2
+            }
+        ]
+    }
+}
