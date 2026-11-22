@@ -115,7 +115,7 @@
                     }
                 },
                 {
-                    "biome": "kkmnnoir:end_decaylands",
+                    "biome": "kkmnnoir:void_decays",
                     "parameters": {
                         "continentalness": [
                             -2,
